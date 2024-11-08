@@ -16,7 +16,7 @@ function getUnauthorizedResponse(req) {
     : 'Unauthorized'
 }
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'main')));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'main', 'index.html'));
