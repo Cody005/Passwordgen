@@ -1,13 +1,14 @@
 {
-  "name": "3d-search-website",
+  "name": "Password Generator",
   "version": "1.0.0",
-  "description": "A 3D search website using Three.js and React",
-  "main": "index.html",
+  "description": "Test to access with username and password",
+  "main": "index.js",
   "scripts": {
-    "start": "serve .",
-    "build": "echo 'No build step required for static site'"
+    "start": "node server.js"
   },
   "dependencies": {
-    "serve": "^14.1.2"
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0"
   }
 }
+
