@@ -1,0 +1,13 @@
+{
+  "name": "3d-search-website",
+  "version": "1.0.0",
+  "description": "A 3D search website using Three.js and React",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build step required for static site'"
+  },
+  "dependencies": {
+    "serve": "^14.1.2"
+  }
+}
