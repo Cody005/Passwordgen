@@ -1,14 +1,14 @@
 {
-  "name": "Password Generator",
+  "name": "your-project-name",
   "version": "1.0.0",
-  "description": "Test to access with username and password",
-  "main": "index.js",
+  "description": "Your project description",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'No build step required for static site'"
   },
   "dependencies": {
     "express": "^4.17.1",
     "express-basic-auth": "^1.2.0"
   }
 }
-
