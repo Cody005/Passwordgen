@@ -5,9 +5,16 @@ const path = require('path');
 const app = express();
 
 app.use(basicAuth({
-  users: { 'Adminito': 'superpasswordito' },
-  challenge: true
+  users: { 'admin': 'supersecret' },
+  challenge: true,
+  unauthorizedResponse: getUnauthorizedResponse
 }));
+
+function getUnauthorizedResponse(req) {
+  return req.auth
+    ? ('Credentials ' + req.auth.user + ':' + req.auth.password + ' rejected')
+    : 'Unauthorized'
+}
 
 app.use(express.static(path.join(__dirname, 'public')));
 
